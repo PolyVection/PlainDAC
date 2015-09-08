@@ -47,8 +47,8 @@ void getVolume(int fd){
     read(fd, bufferR,1);
     
 
-    printf("LEFT: %02d\n", (int)bufferL[0]);
-    printf("RIGHT: %02d\n", (int)bufferR[0]);
+    printf("LEFT: -%02d dB\n", (int)bufferL[0]);
+    printf("RIGHT: -%02d dB\n", (int)bufferR[0]);
 
 }
 
@@ -65,7 +65,7 @@ void setBalance(int balance){
 void setVolume(int volume, int fd){
     
     //we want to have a range from 0-100 for volume control
-    float multi = 2.56;
+    float multi = 2.55;
     volume =(int)volume*multi;
     
     //stop at 255
