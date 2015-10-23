@@ -12,14 +12,14 @@ edit plaindac.c and replace “/dev/i2c-1” with “/dev/i2c-2”
 gcc -o plaindac plaindac.c
 
 #USAGE
-startup command:    plaindac -u
+./plaindac -u = startup command:    
 
-mute command:       plaindac -s
+./plaindac -s = mute command:       
 
-volume set value:   plaindac -v 01 (where 01 is the volume in percent from 0 to 124)
+./plaindac -m = volume + 0.5dB:     
 
-volume + 0.5dB:     plaindac -m
+./plaindac -l = volume - 0.5dB:     
 
-volume - 0.5dB:     plaindac -l
+./plaindac -d = status/debug:       
 
-status/debug:       plaindac -d
+./plaindac -v 01 (where 01 is the volume in percent from 0 to 124) 
