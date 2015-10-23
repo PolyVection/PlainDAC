@@ -49,6 +49,8 @@ cfg_reg initSeq[] = {
 
 cfg_reg stopSeq[] = {
 
+    { 0x00, 0x00 }, // SELECT PAGE 0
     { 0x56, 0x00 }, // GPIO4 LOW
+    { 0x03, 0x11 }, // MUTE
     
 };
