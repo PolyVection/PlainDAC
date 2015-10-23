@@ -14,7 +14,7 @@ gcc -o plaindac plaindac.c
 #USAGE
 ./plaindac -u = startup command:    
 
-./plaindac -s = mute command:       
+./plaindac -p = mute command:       
 
 ./plaindac -m = volume + 0.5dB:     
 
